@@ -33,7 +33,7 @@ function canVote(age) {
   if(age >= 18){
     return 'yes you can vote mah man';
   }else{
-    return 'sorry bruh you still too young'
+    return 'sorry bruh you still too young';
   }
 }
 
@@ -52,6 +52,14 @@ console.log(canVote(19));
  * Console.log your result.
 */
 
+function login(password) {
+  if(password === 'test1234'){
+    return "Great job! your password was correct!";
+  }else{
+    return "please re-enter your password, it came back incorrect :(";
+  }
+}
+console.log(login("test1234"));
 
 /*
  * #3
