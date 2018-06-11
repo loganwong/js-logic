@@ -137,6 +137,15 @@ console.log("bigBird: ", bigBird("Boo"));
  * Console.log your result.
 */
 
+function isEqual(first, second) {
+  if(first === second){
+    return "You look mahvlous!";
+  }else{
+    return "I don't know who you are anymore.";
+  }
+}
+console.log(isEqual("Ping", "Pong"));
+console.log(isEqual('chicken', 'chicken'));
 
 /*
  * #7
