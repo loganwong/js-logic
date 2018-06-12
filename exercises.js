@@ -297,6 +297,18 @@ function graduation(credits, thesis) {
  * Console.log your result.
 */ 
 
+function moneyTrain(speed) {
+  if(speed < 50){
+    return "You are riding Honolulu's Rail";
+  } else if(speed < 100){
+    return "You are riding an Amtrak";
+  }else{
+    return "Now you ballin' in the Shinkansen!";
+  }
+}
+console.log(moneyTrain(200));
+console.log(moneyTrain(49));
+console.log(moneyTrain(99));
 
 /*
  * #14
@@ -311,6 +323,21 @@ function graduation(credits, thesis) {
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+
+var budget = 30;
+var doughnutPrice = 5;
+var doughnutBought = 0;
+
+function buyDoughnut() {
+  if(budget >= doughnutPrice){
+    budget -= doughnutPrice;
+    doughnutBought++;
+  }
+}
+buyDoughnut();
+
+console.log('budget', budget);
+console.log('doughnuts bought', doughnutBought);
 
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
