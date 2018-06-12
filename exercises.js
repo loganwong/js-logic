@@ -160,6 +160,15 @@ console.log(isEqual('chicken', 'chicken'));
  * Console.log your result.
 */
 
+function notEqual(first, second) {
+  if(first !== second){
+    return "Opposites do attract";
+  }else{
+    return "Cause it's like you're my mirror.";
+  }
+}
+console.log(notEqual("Ying", "Yang"));
+console.log(notEqual("iPhone", "iPhone"));
 
 /*
  * #8
