@@ -268,13 +268,21 @@ console.log(daClub(20, 21));
  * Create a function named `graduation` which takes two parameters: `credits` and `thesis`.
  *
  *  @param Datatype: Number `credit`
- *  @param Datatype: Boolean `thesis`
  *  @return Datatype: String
  *
  * If EITHER the number value is greater than or equal to 120 or the boolean value is true, then the function will return the message: "Congratulations on a job well done." Otherwise, return the message: "See you in summer school."
  * Console.log your result.
 */ 
 
+function graduation(credits, thesis) {
+  if(credits >= 120 || thesis === true){
+    return "Congratulations on a job well done.";
+   }else{
+    return "See you in summer school.";
+   }
+  }
+  var gradResults = graduation(100, true);
+  console.log("graduation: ", gradResults);
 
 
 /*
