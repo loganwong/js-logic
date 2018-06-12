@@ -206,7 +206,16 @@ console.log(spareChange(99));
  * Console.log your result.
 */ 
 
-
+function dirty30(one, two, three) {
+  var sum = one + two + three;
+  if(sum > 30){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log(dirty30(14, 14, 3));
+console.log(dirty30(14, 14, 1));
 
 /*
  * #10
